@@ -1,0 +1,118 @@
+year,subject,content
+2019,Excel filtering?,"Hi all, is there an easy way to filter a large spreadsheet (more than 35,000 items) rather than doing it in smaller subsets?"
+2019,RMarkdown issue,"I’m running into a problem summarizing some federal data in RMarkdown. About 10% of the data is missing and coded as NA. I can work with this in scripts and the console, but when I try to run the same scripts in RMarkdown, I get very long error messages.
+Example:
+Widgets %>%
+                group_by(State, County) %>%
+                summarize(Machine_cheap = min(Equip_cost, na.rm=T),
+                                      (Machine_median = median(Equip_cost, na.rm=T),
+                                      (Machine_costly = max(Equip_cost, na.rm=T),
+                                      (Machine_range = (Machine_costly – Machine_cheap)) %>%
+                arrange(desc(Machine_range)) %>%
+                head(10)
+This works fine in the console and as a script, but with a 1-line note saying there are warnings. The warnings say that there are “no non-missing arguments to min; returning Inf”. Um, okay.
+But when I run the same script in RMarkdown, instead of a polite one-line suggestion that I look up the first 50 warnings, I get ALL the warnings, and there are a lot more than 50. Only after paging through all of them do I get the 10 lines of results that I asked for in the script.
+I’ve tried using the “warning=FALSE” command at the top of my RMarkdown document (and in other places in the document). It has no effect.
+Any ideas?"
+2019,Writing a process story?,"Hey all,
+
+After a year-long, 15-state FOIA project that has led to at least four investigative stories, I've been asked to write a piece about the process of embarking on a data story of this magnitude. 
+
+I've never really done a ""peel back the curtain,"" kind of story, so I'm at a bit unsure of how to proceed. Anyone have any tips? Any examples of a good data process story?
+
+Many thanks,
+CW"
+2019,Lost in AWS-land,"Hi news geeks,
+
+I'm trying to get some calculations out of the full national ARCOS opioid data file from Washington Post, which is, um, kinda big. It crashes R whenever I try to load it, so I'm trying to put it on AWS, which presumably has the storage and computing power to handle a beast of this size. 
+
+The problem is, as a n00b to AWS, I am completely adrift in this sea of acronyms. So far I've gotten the tsv file into S3, set up a MySQL instance on RDS, and gotten MySQL on my computer talking to the RDS thingy, but I'm stuck on getting the actual data from S3 into RDS. Can anyone help me?
+
+Thanks in advance"
+2019,Best ways to publish large datasets?,"Hey NICARians,
+
+Any suggestions for the best way to publish a large dataset? I'm
+familiar with Datasette [https://github.com/simonw/datasette].
+Tableau's table features don't really meet my needs. There's always
+GitHub, of course, but I'm looking for something that would allow
+readers to more easily explore the data in an interactive way.
+
+Thanks!"
+2019,Trouble scraping with R using proxies,"Good afternoon! Is there an R expert here willing to help a new data reporter get over a hurdle?
+
+I'm trying to scrape a site to build a corpus to analyze, but my scraper got flagged for its repetitive behavior. As nothing I'm doing explicitly violates the website's TOS, I thought I might use IP proxies to fudge the system a little, but I'm running into trouble with implementation.
+
+I have been searching for a way to verify that my function is actually using the IP pipeline I am trying to send it through, but I can't find any information about checking the existing IP being used specifically _within the R environment._
+
+I posted my question in depth on StackOverflow, including sample code: https://stackoverflow.com/questions/55698618/how-can-i-use-set-config-with-httr-to-route-queries-through-a-proxy-in-r
+
+My questions are basically as follows:
+
+1. Is there such a function that will check the active proxy within the R environment, as set by 'set_config'? 'Sys.getenv(""http_proxy"")' is not returning the information.
+
+2. Looking through the code at the link, are there any reasons you can see why setting a proxy using 'set_config' would read as the same IP to a website?
+
+I hope this question is acceptable for this listserv. I'm a grad student reporter and still learning the ropes, but my editor and professor suggested I post here asking for help.
+
+Thank you!"
+2019,"Learning R, Python","Hello all, 
+
+I realize this is almost certainly a perennial question, but ...
+
+Any recommendations for the best online classes / programs for learning R and / or Python? I'd be starting more or less from scratch in both, but I have a decent background in coding generally and have worked with Python before, more with Javascript (and I was a QBasic whiz back in the 90s; memories ...) 
+
+Cost is always a consideration, but doesn't have to be free. 
+
+By way of the research I've already done ... I found Codeacademy frustratingly basic and limited when I took the Javascript course, so have avoided since then. 
+
+Re Python and R, when I ask around I typically hear about Udemy, Treehouse and Udacity ... then there's Edex, Coursera, and something called FreeCodeCamp, which I have not yet checked out. 
+
+Any recommendations or advice would be most appreciated. 
+
+Best to all,
+
+Isaiah Thompson
+Boston"
+2019,Learning the ropes,"Hello everyone!
+I'm a journalism senior at Michigan State University and joined this listserv for a class recently. I've been reading a lot of the conversations trying to get a feel for what skills and knowledge most data reporters have.
+I'm trying to dive into some of the more-complicated aspects of data reporting, such as programming (Python, etc.) and scraping data sets. Do you guys have some tips or little bits of wisdom to help me get started? Where did you go to learn when you were first getting into the field?
+
+Thank you!"
+2018,A hopefully easy possibly SQL question,"Hi!
+
+I've got some decent excel and SQL skills and some very rudimentary python skills.  I've cleaned up a campaign finance spreadsheet, and I want to be able to ask it the following question. What's my best strategy? 
+
+Show me all the rows with any of the addresses associated with this particular person. 
+
+In other words, let's say the table includes the following, and I'm interested in myself, Emily Corwin. I want to retrieve the rows that are in bold.
+
+ADDRESS | NAME | 
+123 First St | Corwin, Emily
+987 Second St | Doe, John
+123 First St | Doe, Jane
+555 Third St | Corwin, Emily
+200 Fourth St | Johnson, Tom
+555 Third St | James, David 
+
+Any help appreciated!
+
+Emily"
+2018,Sample chapters from R for Mass Communication and Journalism now online,"With permission from my publisher, I've posted six chapters from my not-available-until-next-month book  ""R for Mass Communication and Journalism"" at:
+
+http://www.machlis.com/R4Journalists/
+
+Online chapters:
+
+1 - Introduction
+2 - Get Started With R in a Few Easy Steps
+3 - See How Much You Can Do in a Few Lines of Code
+4 - Import Data into R
+5 - Basic Data Exploration
+
+and ...
+
+12 - Putting it all Together: R on Election Day (since the book won't be in print until a few weeks after the 2018 U.S. midterm elections)
+
+The last round of edits hasn't happened yet, so apologies for mistakes (and if you see any, I'd be grateful if you'd let me know!), but I really wanted the election chapter posted before Nov. 6.
+
+Sharon"
