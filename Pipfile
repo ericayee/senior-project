@@ -13,8 +13,6 @@ pandas = "*"
 nltk = "*"
 sklearn = "*"
 regex = "*"
-pil = "*"
-wordcloud = "*"
 matplotlib = "*"
 seaborn = "*"
 
