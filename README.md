@@ -3,17 +3,17 @@
 ## keyword_test.ipynb
 follows this tutorial [Automated Keyword Extraction from Articles using NLP](https://medium.com/analytics-vidhya/automated-keyword-extraction-from-articles-using-nlp-bfd864f41b34)
 
-First time, run
+First time I had to run
 ```
-pipenv install jupyter pandas regex nltk sklearn PIL wordcloud matplotlib seaborn
+pipenv install jupyter pandas regex nltk
 ```
 
-Every other time, run
+If running existing project
 ```
 pipenv install
 ```
 
-Then you can open the project
+Else you can open the project
 ```
 pipenv run jupyter notebook
 ```
