@@ -5,7 +5,7 @@ follows this tutorial [Automated Keyword Extraction from Articles using NLP](htt
 
 First time I had to run
 ```
-pipenv install jupyter pandas regex nltk matplotlib numpy
+pipenv install jupyter pandas regex nltk matplotlib numpy networkx plotly
 ```
 
 If running existing project
