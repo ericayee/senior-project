@@ -34,6 +34,11 @@ cypher,1
 arcgis,1
 flourish,1
 webgl,1
+tidyverse,1
+php,1
+grunt,2
+node,2
+ruby,2
 cs,2
 agate,2
 csv,2
@@ -43,7 +48,10 @@ matplotlib,2
 turk,2
 tesseract,2
 pspp,2
+spss,2
 fusion,2
+spss,2
+bower,3
 csvkit,3
 django,3
 postgresql,3
@@ -63,7 +71,7 @@ command,7
 javascript,9
 r,13
 spreadsheet,14
-sqlite,15
+sql,15
 excel,16
 python,17
 database,20
